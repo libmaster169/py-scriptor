@@ -1,12 +1,18 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-scriptor"
 version = "0.1.0"
-description = "Your project description"
-authors = [{name = "Your Name", email = "your@email.com"}]
+description = "A lightweight Python tool for automating scripting tasks"
+authors = [{name = "xxxx xxxxx", email = "xxxx@example.com"}]
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}
 dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
