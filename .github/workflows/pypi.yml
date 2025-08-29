@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Upgrade system
         run: pip install --upgrade setuptools wheel
-    
+
       - name: Check out code
         uses: actions/checkout@v4
 
