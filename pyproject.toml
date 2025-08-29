@@ -7,3 +7,6 @@ name = "py-scriptor"
 version = "0.1.0"
 description = "Your project description"
 authors = [{name = "Your Name", email = "your@email.com"}]
+readme = ""
+license = {text = "MIT"}
+dependencies = []
