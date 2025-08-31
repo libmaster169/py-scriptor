@@ -22,7 +22,7 @@ class RuleScript:
                 rules.append((cond.strip(), actions.strip()))
         return rules
 
-    def run(self, max_steps=1000):
+    def run(self, max_steps=1000, cps=0):
         for impo in self.imports:
             try:
                 self.vars[impo] = __import__(impo)
