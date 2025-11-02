@@ -10,7 +10,11 @@ jobs:
 
     steps:
       - name: Upgrade system
-        run: pip install --upgrade setuptools wheel
+        run: pip install --upgrade wheel
+
+      - name: Upgrade setuptools
+        run: pip install --upgrade "setuptools==75.8.0"
+
 
       - name: Check out code
         uses: actions/checkout@v4
