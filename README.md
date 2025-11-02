@@ -14,9 +14,7 @@ Scriptor is a small Python library for defining and running simple rule-based sc
 Clone the repository and (optionally) install it in editable mode:
 
 ```bash
-git clone https://github.com/libmaster169/py-scriptor.git
-cd py-scriptor
-pip install -e .
+pip install py-scriptor
 ```
 
 Or add the repository folder to PYTHONPATH.
