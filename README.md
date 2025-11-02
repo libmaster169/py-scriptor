@@ -78,12 +78,6 @@ rs = RuleScript(script, vars)
 rs.run(max_steps=10)
 ```
 
-Running the IDE (scriptorIDE.py):
-
-```bash
-python scriptorIDE.py
-```
-
 ## Security
 Scriptor executes Python code using eval/exec. Do not run scripts from unknown sources. For safer execution consider:
 - Running in an isolated process/container.
