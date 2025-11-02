@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-scriptor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Scriptor is a small Python library for defining and running simple rule-based scripts"
 authors = [{name = "xxxx xxxxx", email = "xxxx@example.com"}]
 readme = "README.md"
