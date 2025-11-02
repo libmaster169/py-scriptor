@@ -12,10 +12,6 @@ jobs:
       - name: Upgrade system
         run: pip install --upgrade wheel
 
-      - name: Upgrade setuptools
-        run: pip install --upgrade "setuptools==76.1.0"
-
-
       - name: Check out code
         uses: actions/checkout@v4
 
@@ -27,6 +23,8 @@ jobs:
       - name: Install build dependencies
         run: python -m pip install --upgrade pip build twine
 
+      - name: Upgrade setuptools
+        run: pip install --upgrade "setuptools==76.1.0"
 
       - name: Build package
         run: python -m build
