@@ -1,8 +1,8 @@
-# Scriptor
+# Py_scriptor
 
 Scriptor is a small Python library for defining and running simple rule-based scripts. A script is a sequence of conditional rules that, when a condition is met, execute one or more actions.
 
-> Security: Scriptor uses eval() and exec(). Do not run untrusted or unreviewed scripts.
+> Security: Py_scriptor uses eval() and exec(). Do not run untrusted or unreviewed scripts.
 
 ## Features
 - Compact rule format (condition -> actions).
@@ -81,6 +81,12 @@ script = "math::x > 0 >>> print(math.sqrt(x)), x -= 1"
 vars = {"x": 4}
 rs = RuleScript(script, vars)
 rs.run(max_steps=10)
+```
+
+## IDE
+Runing IDE:
+```python
+from py_scriptor import scriptorIDE
 ```
 
 ## Security
