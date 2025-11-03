@@ -3,7 +3,7 @@ import io
 import tkinter as tk
 from tkinter import scrolledtext, messagebox, filedialog
 import json
-from scriptor import RuleScript
+from . import RuleScript
 import types
 
 class ScriptorIDE(tk.Tk):
@@ -96,6 +96,7 @@ class ScriptorIDE(tk.Tk):
         except Exception as e:
             messagebox.showerror("Błąd", f"Nie udało się wczytać: {e}")
 
-if __name__ == "__main__":
-    app = ScriptorIDE()
-    app.mainloop()
+
+app = ScriptorIDE()
+app.mainloop()
+
