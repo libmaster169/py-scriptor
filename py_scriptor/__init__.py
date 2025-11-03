@@ -1,7 +1,7 @@
 import traceback
 
 class RuleScript:
-    def __init__(self, script, vars):
+    def __init__(self, script, vars = {}):
         scriptS = "".join(script.splitlines())
         if len(script.split("::")) == 1:
             self.rules = self.parse(script)
@@ -23,7 +23,7 @@ class RuleScript:
                 rules.append((cond.strip(), actions.strip()))
         return rules
 
-    def run(self, max_steps=1000, cps=0):
+    def run(self, max_steps=1000):
         for impo in self.imports:
             try:
                 self.vars[impo] = __import__(impo)
@@ -61,4 +61,5 @@ class RuleScript:
             print(f"Execution error: {e}")
             traceback.print_exc()
             return False
+
 
