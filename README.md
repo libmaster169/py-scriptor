@@ -88,6 +88,7 @@ Runing IDE:
 ```python
 from py_scriptor import scriptorIDE
 ```
+Note: Scripts are saved as json files.
 
 ## Security
 Scriptor executes Python code using eval/exec. Do not run scripts from unknown sources. For safer execution consider:
@@ -102,6 +103,9 @@ Contributions are welcome. Suggestions:
 - Add unit tests and CI.
 
 Open an issue before larger changes, then submit a pull request with tests.
+
+## Github
+Link to github: https://github.com/libmaster169/py-scriptor
 
 ## License
 The LICENSE file contains the MIT license.
