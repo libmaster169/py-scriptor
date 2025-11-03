@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Upgrade system
+      - name: Upgrade wheel
         run: pip install --upgrade wheel
 
       - name: Check out code
