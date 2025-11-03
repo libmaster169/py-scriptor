@@ -2,6 +2,7 @@ import traceback
 
 class RuleScript:
     def __init__(self, script, vars):
+        scriptS = "".join(script.splitlines())
         if len(script.split("::")) == 1:
             self.rules = self.parse(script)
             self.imports = []
@@ -60,3 +61,4 @@ class RuleScript:
             print(f"Execution error: {e}")
             traceback.print_exc()
             return False
+
