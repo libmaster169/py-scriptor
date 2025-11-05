@@ -32,12 +32,14 @@ class RuleScript:
                 return False
 
         steps = 0
+        self.vars["start"] = True
         while steps < max_steps:
             for cond, actions in self.rules:
                 if self.eval_expr(cond):
                     for action in actions.split(","):
                         if not self.execute(action.strip()):
                             return False
+            self.vars["start"] = False
             steps += 1
         return True
 
@@ -61,5 +63,6 @@ class RuleScript:
             print(f"Execution error: {e}")
             traceback.print_exc()
             return False
+
 
 
