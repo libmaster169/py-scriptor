@@ -39,6 +39,7 @@ Examples:
 - `math::x > 0 >>> print(math.sqrt(x)), x -= 1`
 
 Note: newlines are deleted inside RuleScript init code
+Note: `start` is a variable which is `True` only in cycle 0
 
 ## API
 
